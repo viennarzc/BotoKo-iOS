@@ -11,6 +11,10 @@
 		210B1CDA27DB86AF0027420C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B1CD927DB86AF0027420C /* ContentView.swift */; };
 		210B1CDC27DB86B10027420C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210B1CDB27DB86B10027420C /* Assets.xcassets */; };
 		210B1CDF27DB86B10027420C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210B1CDE27DB86B10027420C /* Preview Assets.xcassets */; };
+		210B1CE727DCE6BF0027420C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B1CE627DCE6BF0027420C /* MainView.swift */; };
+		210B1CE927DCE7C70027420C /* CandidatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B1CE827DCE7C70027420C /* CandidatesView.swift */; };
+		210B1CEB27DCEBDD0027420C /* CandidatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B1CEA27DCEBDD0027420C /* CandidatesListView.swift */; };
+		210B1CED27DCF02B0027420C /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B1CEC27DCF02B0027420C /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		210B1CD927DB86AF0027420C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		210B1CDB27DB86B10027420C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		210B1CDE27DB86B10027420C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		210B1CE527DCE61B0027420C /* BotoKo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BotoKo.entitlements; sourceTree = "<group>"; };
+		210B1CE627DCE6BF0027420C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		210B1CE827DCE7C70027420C /* CandidatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesView.swift; sourceTree = "<group>"; };
+		210B1CEA27DCEBDD0027420C /* CandidatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesListView.swift; sourceTree = "<group>"; };
+		210B1CEC27DCF02B0027420C /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,12 @@
 		210B1CD627DB86AF0027420C /* BotoKo */ = {
 			isa = PBXGroup;
 			children = (
+				210B1CE527DCE61B0027420C /* BotoKo.entitlements */,
 				210B1CD727DB86AF0027420C /* BotoKoApp.swift */,
 				210B1CD927DB86AF0027420C /* ContentView.swift */,
+				210B1CE827DCE7C70027420C /* CandidatesView.swift */,
+				210B1CEA27DCEBDD0027420C /* CandidatesListView.swift */,
+				210B1CE627DCE6BF0027420C /* MainView.swift */,
 				210B1CDB27DB86B10027420C /* Assets.xcassets */,
 				210B1CDD27DB86B10027420C /* Preview Content */,
 			);
@@ -63,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				210B1CDE27DB86B10027420C /* Preview Assets.xcassets */,
+				210B1CEC27DCF02B0027420C /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -138,6 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				210B1CDA27DB86AF0027420C /* ContentView.swift in Sources */,
+				210B1CE727DCE6BF0027420C /* MainView.swift in Sources */,
+				210B1CED27DCF02B0027420C /* PreviewData.swift in Sources */,
+				210B1CE927DCE7C70027420C /* CandidatesView.swift in Sources */,
+				210B1CEB27DCEBDD0027420C /* CandidatesListView.swift in Sources */,
 				210B1CD827DB86AF0027420C /* BotoKoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +284,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BotoKo/BotoKo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BotoKo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UWE2EP59T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -276,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,6 +304,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.viennarz.BotoKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,9 +316,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BotoKo/BotoKo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BotoKo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UWE2EP59T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,6 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +336,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.viennarz.BotoKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

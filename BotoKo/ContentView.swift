@@ -7,10 +7,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
+    @State var active: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("")
     }
 }
 

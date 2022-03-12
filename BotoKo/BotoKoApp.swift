@@ -11,7 +11,7 @@ import SwiftUI
 struct BotoKoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
